@@ -1,0 +1,52 @@
+# Dependencias que se instalarán en el contenedor
+/vendor
+/node_modules
+
+# Entorno y configuración local
+!.env
+.env.*
+.env.example
+
+# Archivos de caché y logs
+/storage/logs/*
+/storage/app/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/bootstrap/cache/*
+
+# Archivos de desarrollo
+.git
+.github
+.gitignore
+.gitattributes
+.editorconfig
+.idea
+.vscode
+*.sublime-*
+.phpunit.result.cache
+phpunit.xml
+
+# Archivos de documentación
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+*.md
+
+# Otros archivos no necesarios
+*.log
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Excluir archivos temporales o de prueba
+/tests
+phpunit.xml
+
+# Mantener carpetas necesarias con .gitkeep
+!storage/app/.gitkeep
+!storage/framework/cache/.gitkeep
+!storage/framework/sessions/.gitkeep
+!storage/framework/views/.gitkeep
+!storage/logs/.gitkeep
