@@ -19,7 +19,7 @@ services:
     container_name: LaravelK8s_db
     restart: unless-stopped
     volumes:
-      - laravelk8s_db_data:/var/lib/mysql
+      - db_data:/var/lib/mysql
     environment:
       MYSQL_DATABASE: '${DB_DATABASE}'
       MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
@@ -48,7 +48,7 @@ services:
       - bridge-network
 
 volumes:
-  laravelk8s_db_data:
+  db_data:
     driver: local
 
 networks:
